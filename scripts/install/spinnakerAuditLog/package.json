@@ -1,6 +1,12 @@
 {
   "dependencies": {
     "@google-cloud/logging": "4.1.1",
-    "moment-timezone": "^0.5.11"
-  }
+    "moment-timezone": "^0.5.11",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
